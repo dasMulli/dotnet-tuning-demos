@@ -1,0 +1,6 @@
+set DOTNET_EnableEventPipe=1
+set DOTNET_EventPipeConfig=Microsoft-Windows-DotNETRuntime:0x1F000080018:5
+set DOTNET_EventPipeOutputPath=trace.nettrace
+set DOTNET_ReadyToRun=0
+set DOTNET_TieredPGO=0
+
