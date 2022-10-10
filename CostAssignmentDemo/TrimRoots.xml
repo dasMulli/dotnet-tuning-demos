@@ -1,0 +1,9 @@
+<linker>
+  <assembly fullname="Newtonsoft.Json">
+    <type fullname="Newtonsoft.Json.JsonToken"/>
+    <type fullname="Newtonsoft.Json.DefaultJsonNameTable" />
+    <type fullname="Newtonsoft.Json.Utilities.CollectionUtils">
+      <method name="AddDistinct" />
+    </type>
+  </assembly>
+</linker>

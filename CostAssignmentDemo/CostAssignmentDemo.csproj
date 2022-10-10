@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="MathNet.Numerics.Data.Text" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
+
+
+
+
+<!--
+
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+
+
+
+
+
+  <ItemGroup>
+    <TrimmerRootDescriptor Include="TrimRoots.xml" />
+  </ItemGroup>
+
+
+
+
+
+
+
+  <ItemGroup>
+    <IlcArg Include="--instruction-set:skylake" />
+  </ItemGroup>
+
+
+
+
+
+
+
+
+-->
