@@ -25,9 +25,10 @@
 
 
 
+  Add - (XML comments..)
 
   <ItemGroup>
-    <IlcArg Include="--instruction-set:skylake" />
+    <IlcArg Include="-instruction-set:skylake" />
   </ItemGroup>
 
 
