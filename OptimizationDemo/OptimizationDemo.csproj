@@ -9,10 +9,6 @@
     <TieredCompilation>false</TieredCompilation>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PublishReadyToRunPgoFiles Include="OptimizationDemo.mibc" />
-  </ItemGroup>
-
 </Project>
 
 
