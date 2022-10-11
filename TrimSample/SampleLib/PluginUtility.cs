@@ -5,7 +5,7 @@ using System.Reflection;
 namespace SampleLib;
 public class PluginUtility
 {
-    public static IPlugin CreatePlugin([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.All)] Type type)
+    public static IPlugin CreatePlugin(Type type)
         => Activator.CreateInstance(type) as IPlugin ?? throw new Exception("Failed to create plugin");
 
     public static IList<string> FindAllPluginNames()
@@ -20,6 +20,13 @@ public class PluginUtility
 
 
 /*
+
+
+
+    CreatePlugin([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.All)] Type type)
+
+
+
 
     [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2026")]
     [UnconditionalSuppressMessage("ReflectionAnalysis", "IL2067")]

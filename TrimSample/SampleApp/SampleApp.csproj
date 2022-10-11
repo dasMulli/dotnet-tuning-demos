@@ -12,3 +12,38 @@
   </PropertyGroup>
 
 </Project>
+
+
+
+<!--
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+
+
+
+
+
+
+
+
+
+
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+
+
+
+
+
+  <ItemGroup>
+    <TrimmerRootDescriptor Include="TrimRoots.xml" />
+  </ItemGroup>
+
+-->

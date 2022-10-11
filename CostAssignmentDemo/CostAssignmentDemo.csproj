@@ -21,20 +21,6 @@
 
 <!--
 
-  <ItemGroup>
-    <TrimmerRootAssembly Include="Newtonsoft.Json" />
-  </ItemGroup>
-
-
-
-
-
-
-  <ItemGroup>
-    <TrimmerRootDescriptor Include="TrimRoots.xml" />
-  </ItemGroup>
-
-
 
 
 
