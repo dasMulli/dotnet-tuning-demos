@@ -41,7 +41,7 @@ public class PgoBenchmarks
     }
     
     [Benchmark]
-    public StringBuilder ProfileDrivingInlining()
+    public StringBuilder ProfileDrivenInlining()
     {
         StringBuilder sb = new();
         for (int i = 0; i < 1000; i++)
