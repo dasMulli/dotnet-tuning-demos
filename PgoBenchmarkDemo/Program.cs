@@ -13,8 +13,6 @@ public class PgoBenchmarkConfig : ManualConfig
         AddJob(Job.Default.WithId(".NET 7 Default"));
 
         AddJob(Job.Default.WithId("Dynamic PGO enabled")
-            .WithJit(BenchmarkDotNet.Environments.Jit.Llvm)
-            .WithRuntime(BenchmarkDotNet.Environments.MonoRuntime.Default)
             .WithEnvironmentVariable("DOTNET_TieredPGO", "1"));
     }
 }
