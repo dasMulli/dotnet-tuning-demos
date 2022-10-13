@@ -25,4 +25,10 @@
     <PublishReadyToRunPgoFiles Include="OptimizationDemo.mibc" />
   </ItemGroup>
 
+
+
+    Add "-" (XML Comments...)
+  
+    <PublishReadyToRunCrossgen2ExtraArgs>-embed-pgo-data</PublishReadyToRunCrossgen2ExtraArgs>
+
 -->
