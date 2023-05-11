@@ -3,10 +3,7 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 builder.Logging.AddConsole();
-builder.Services.ConfigureHttpJsonOptions(options =>
-{
-    options.SerializerOptions.AddContext<TodoJsonContext>();
-});
+
 
 var app = builder.Build();
 
@@ -21,7 +18,17 @@ todosApi.MapGet("/{id}", (int id) =>
 
 app.Run();
 
-[JsonSerializable(typeof(Todo))]
-internal partial class TodoJsonContext : JsonSerializerContext
-{
-}
+// [JsonSerializable(typeof(Todo))]
+// internal partial class TodoJsonContext : JsonSerializerContext
+// {
+// }
+
+
+
+
+
+// builder.Services.ConfigureHttpJsonOptions(options =>
+// {
+//     options.SerializerOptions.AddContext<TodoJsonContext>();
+// });
+
