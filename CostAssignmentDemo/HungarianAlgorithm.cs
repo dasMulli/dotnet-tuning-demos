@@ -462,9 +462,14 @@ public static unsafe class HungarianAlgorithm
             {
                 for (var row = 0; row < rows; row++)
                 {
+                    if(rowsCovered[row])
+                    {
+                        continue;
+                    }
+
                     for (var column = 0; column < columns; column++)
                     {
-                        if (!rowsCovered[row] && !colsCovered[column])
+                        if (!colsCovered[column])
                         {
                             minValue = Math.Min(minValue, costs[row, column]);
                         }
