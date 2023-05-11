@@ -19,6 +19,7 @@ todosApi.MapGet("/{id}", (int id) =>
 app.Run();
 
 // [JsonSerializable(typeof(Todo))]
+// [JsonSerializable(typeof(Todo[]))]
 // internal partial class TodoJsonContext : JsonSerializerContext
 // {
 // }
