@@ -6,7 +6,7 @@ char* greeting(char* name);
 
 int main()
 {
-    char* name = "MS Tech Summit";
+    char* name = "Global Azure Austria";
     char* message = greeting(name);
     printf("%s\n", message);
     return 0;
