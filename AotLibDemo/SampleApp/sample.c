@@ -6,7 +6,7 @@ char* greeting(char* name);
 
 int main()
 {
-    char* name = "NDC Sydney";
+    char* name = "World";
     char* message = greeting(name);
     printf("%s\n", message);
     return 0;
