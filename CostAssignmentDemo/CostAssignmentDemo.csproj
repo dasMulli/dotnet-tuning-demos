@@ -18,21 +18,12 @@
 
 
 
+
+
+
 <!--
 
-
-
-
-
-  Add - (XML comments..)
-
-  <ItemGroup>
-    <IlcArg Include="-instruction-set:skylake" />
-  </ItemGroup>
-
-
-
-
+    <IlcInstructionSet>skylake</IlcInstructionSet>
 
 
 
