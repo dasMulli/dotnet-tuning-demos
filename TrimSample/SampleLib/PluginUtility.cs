@@ -8,6 +8,7 @@ public class PluginUtility
     public static IPlugin CreatePlugin(Type type)
         => Activator.CreateInstance(type) as IPlugin ?? throw new Exception("Failed to create plugin");
 
+
     public static IList<string> FindAllPluginNames()
         => Assembly.GetAssembly(typeof(PluginUtility))!
             .ExportedTypes
