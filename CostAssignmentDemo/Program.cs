@@ -9,10 +9,12 @@ Matrix<float> costs;
 
 if(File.Exists("data.csv"))
 {
+    Console.WriteLine("Reading existing data...");
     costs = DelimitedReader.Read<float>("data.csv", false, ";", false);
 }
 else
 {
+    Console.WriteLine("Creating new data...");
     var rnd = new Random(42);
     costs = Matrix<float>.Build.Dense(1_000, 2_000, (_,_) => (float)rnd.NextDouble());
     DelimitedWriter.Write("data.csv", costs, ";");

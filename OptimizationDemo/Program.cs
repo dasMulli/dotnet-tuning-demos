@@ -31,15 +31,15 @@ interface IFactory
     IThing CreateThing();
 }
 
-class Factory : IFactory
-{
-    public IThing CreateThing() => new Thing();
-}
-
 interface IThing
 {
     bool FeelingHappy { get; }
     void GiveTreat();
+}
+
+class Factory : IFactory
+{
+    public IThing CreateThing() => new Thing();
 }
 
 class Thing : IThing

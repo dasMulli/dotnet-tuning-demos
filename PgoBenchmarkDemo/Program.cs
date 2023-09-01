@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Environments;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 
@@ -10,12 +11,14 @@ public class PgoBenchmarkConfig : ManualConfig
 {
     public PgoBenchmarkConfig()
     {
-        AddJob(Job.Default.WithId(".NET 7 Default"));
+        AddJob(Job.Default.WithId(".NET 8 Default")
+            .AsBaseline());
 
-        AddJob(Job.Default.WithId("Dynamic PGO enabled")
-            .WithJit(BenchmarkDotNet.Environments.Jit.Llvm)
-            .WithRuntime(BenchmarkDotNet.Environments.MonoRuntime.Default)
-            .WithEnvironmentVariable("DOTNET_TieredPGO", "1"));
+        AddJob(Job.Default.WithId(".NET 7 Default")
+            .With(CoreRuntime.Core70));
+
+        AddJob(Job.Default.WithId(".NET 8 Dynamic PGO disabled")
+            .WithEnvironmentVariable("DOTNET_TieredPGO", "0"));
     }
 }
 
@@ -41,7 +44,7 @@ public class PgoBenchmarks
     }
     
     [Benchmark]
-    public StringBuilder ProfileDrivingInlining()
+    public StringBuilder ProfileDrivenInlining()
     {
         StringBuilder sb = new();
         for (int i = 0; i < 1000; i++)

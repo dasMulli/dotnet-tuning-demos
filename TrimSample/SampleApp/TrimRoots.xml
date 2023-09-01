@@ -1,9 +1,8 @@
 <linker>
-  <assembly fullname="Newtonsoft.Json">
-    <type fullname="Newtonsoft.Json.JsonToken"/>
-    <type fullname="Newtonsoft.Json.DefaultJsonNameTable" />
-    <type fullname="Newtonsoft.Json.Utilities.CollectionUtils">
-      <method name="AddDistinct" />
-    </type>
+  <!-- https://github.com/dotnet/linker/blob/main/docs/data-formats.md#descriptor-format -->
+  <assembly fullname="SampleLib">
+    <type fullname="SampleLib.PluginA"/>
+    <type fullname="SampleLib.PluginB"/>
+    <type fullname="SampleLib.PluginC"/>
   </assembly>
 </linker>

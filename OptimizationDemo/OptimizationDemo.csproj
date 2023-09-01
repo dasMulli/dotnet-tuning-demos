@@ -5,13 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <TieredPgo>false</TieredPgo>
-    <TieredCompilation>false</TieredCompilation>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PublishReadyToRunPgoFiles Include="OptimizationDemo.mibc" />
-  </ItemGroup>
 
 </Project>
 
@@ -25,8 +19,25 @@
 
 <!--
 
+  <TargetFramework>net8.0</TargetFramework>
+
+
+
+  
   <ItemGroup>
     <PublishReadyToRunPgoFiles Include="OptimizationDemo.mibc" />
   </ItemGroup>
+
+
+
+    Add "-" (XML Comments...)
+    <PublishReadyToRunCrossgen2ExtraArgs>-embed-pgo-data</PublishReadyToRunCrossgen2ExtraArgs>
+  
+
+
+
+    <TieredPGO>false</TieredPGO>
+
+
 
 -->
