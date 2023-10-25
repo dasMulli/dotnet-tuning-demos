@@ -1,8 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using SampleLib;
 
-using SampleLib;
-
-Console.WriteLine("The following pluigns can be used:");
+Console.WriteLine("The following Plugins can be used:");
 
 foreach (var pluginName in PluginUtility.FindAllPluginNames())
 {
